@@ -22,7 +22,9 @@
         width: 8.4rem;
         height: 2.2rem;
         fill: #ffffff;
-        margin: 2.2rem auto 8.4rem;
+        margin-top: 2.2rem;
+        margin-right: auto;
+        margin-left: auto;
     }
     .header {
         height: 570px;
@@ -41,6 +43,9 @@
     .header-container {
         position: relative;
         z-index: 2;
+    }
+    .header-title-box {
+        margin-top: 8.4rem;
     }
     .header-title {
         display: flex;
