@@ -3,16 +3,46 @@
     padding: 0;
 }
 @font-face {
-    font-family: Open Sans Bold;
+    font-family: "Open Sans Bold";
     src: url(../fonts/OpenSans-Bold.ttf);
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
-    font-family: Open Sans Regular;
+    font-family: "Open Sans Regular";
     src: url(../fonts/OpenSans-Regular.ttf);
     font-weight: 400;
     font-style: normal;
+}
+.logo-box {
+    display: flex;
+}
+.logo {
+    fill: #ffffff;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header::before {
+    content: "";
+    background-color: #161133;
+    position: absolute;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.header-container {
+    position: relative;
+    z-index: 2;
+}
+.header-title {
+    font-family: "Open Sans Bold", serif;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.span-h1 {
+    display: block;
 }
 @media (max-width: 640px) {
     .logo-box {
@@ -21,42 +51,23 @@
     .logo {
         width: 8.4rem;
         height: 2.2rem;
-        fill: #ffffff;
         margin-top: 10px;
-        margin-right: auto;
-        margin-left: auto;
     }
     .header {
         background: url("../images/football_767.jpg") no-repeat center center #000000;
+        padding: 20px 0 85px;
         background-size: cover;
         position: relative;
-        padding: 20px 0 85px;
-    }
-    .header::before {
-        content: "";
-        background-color: #161133;
-        position: absolute;
-        opacity: 0.9;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
     }
     .header-container {
-        position: relative;
-        z-index: 2;
         padding: 0 16px;
     }
     .header-title {
-        font-family: Open Sans Bold, serif;
-        text-transform: uppercase;
-        color: #ffffff;
         font-size: 1.75rem;
         margin-left: 6.25%;
         margin-top: 8.4rem;
     }
     .span-h1 {
-        display: block;
         padding-left: 2.6rem;
     }
     .button-box {
@@ -86,16 +97,16 @@
         margin-right: 5px;
     }
     .text {
-        font-family: Open Sans Regular, serif;
+        font-family: "Open Sans Regular", serif;
         text-transform: uppercase;
         font-size: 0.5rem;
     }
     .text-2 {
-        font-family: Open Sans Bold, serif;
+        font-family: "Open Sans Bold", serif;
         display: block;
     }
     .section-subject {
-        font-family: Open Sans Bold, serif;
+        font-family: "Open Sans Bold", serif;
         font-size: 3.125rem;
         color: #e7e7e7;
         text-transform: uppercase;
@@ -103,23 +114,28 @@
     }
     .box-preview {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
-    .img-preview {
-        margin-right: auto;
+    .box-preview::before {
+        content: url("../images/footballer_192.png");
+        background-repeat: no-repeat;
         margin-left: auto;
+        margin-right: auto;
+    }
+    .box-preview-2::before {
+        content: url("../images/basketballer_302.png");
     }
     .content-box {
-        padding: 3.75rem 6.25% 3.125rem;
+        padding: 1.875rem 6.25% 3.125rem;
     }
     .header-box {
         display: flex;
-        font-family: Open Sans Bold, serif;
+        font-family: "Open Sans Bold", serif;
         text-transform: uppercase;
         margin-bottom: 1.5rem;
     }
     .number-box {
-        font-family: Open Sans Bold, serif;
+        font-family: "Open Sans Bold", serif;
         text-transform: uppercase;
         font-size: 14px;
         align-self: flex-start;
@@ -171,40 +187,55 @@
         background-color: #090c35;
     }
 
-    .img-container {
-        height: auto;
-        width: 100%;
+    .gallery-column {
         position: relative;
-        z-index: -1;
     }
-    .container {
-        margin: -3.75rem 6.25% 4.5rem;
+    img {
+        height: 350px;
+        width: 100%;
     }
-    .holder {
+    .gallery-counter {
+        font-family: "Open Sans Bold", serif;
+        font-size: 14px;
         display: flex;
         box-sizing: border-box;
         width: 70px;
         height: 70px;
         background-color: #5e42b0;
-    }
-    .holder-number {
+        align-items: center;
+        justify-content: center;
         color: #ffffff;
-        margin: auto;
+        position: absolute;
+        top: 290px;
+        left: 6.25%;
     }
-    .holder-number:after {
-        background-color: #8f7bc8;
+    .gallery-counter::after {
+        content: "";
+        position: absolute;
+        background: #8f7bc8;
+        right: 39%;
+        left: 39%;
+        bottom: 21px;
+        width: 22%;
+        height: 4px;
+        border-radius: 2px;
     }
-    .container-subtitle {
-        font-family: Open Sans Bold, serif;
+    .gallery-content {
+        margin-bottom: 80px;
+        margin-left: 6.25%;
+    }
+    .gallery-title {
+        font-family: "Open Sans Bold", serif;
         font-size: 1.75rem;
         color: #e7e7e7;
         text-transform: uppercase;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-    .container-text {
+    .gallery-text {
         font-family: "Open Sans Regular", serif;
     }
+
     .footer {
         background: url("../images/game_767.jpg") no-repeat center center #000000;
         background-size: cover;
@@ -242,7 +273,7 @@
         margin: auto;
     }
     .footer-title {
-        font-family: Open Sans Bold, serif;
+        font-family: "Open Sans Bold", serif;
         font-size: 2.1rem;
         text-transform: uppercase;
         color: #ffffff;
@@ -258,5 +289,63 @@
     .footer-logo {
         margin-top: 3.5rem;
         padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 960px){
+    .logo {
+        width: 12.8rem;
+        height: 3.6rem;
+        margin-top: 20px;
+    }
+    .header {
+        background: url("../images/football_1280.jpg") no-repeat center center #000000;
+        background-size: cover;
+        position: relative;
+        padding: 20px 0 85px;
+    }
+    .header-container {
+        padding: 0 16px;
+    }
+    .header-title {
+        font-size: 4rem;
+        margin-left: 11%;
+        margin-top: 11.25rem;
+    }
+    .span-h1 {
+        padding-left: 6rem;
+    }
+    .button-box {
+        margin-top: 5.5rem;
+        display: flex;
+    }
+    .button {
+        background-color: #5e42b0;
+        border: 0;
+        height: 75px;
+        width: 310px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 1.25rem;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .button-logo {
+        width: 20px;
+        height: 20px;
+        fill: #ffffff;
+        margin-left: 80px;
+        margin-right: 5px;
+    }
+    .text {
+        font-family: "Open Sans Regular", serif;
+        text-transform: uppercase;
+        font-size: 0.5rem;
+    }
+    .text-2 {
+        font-family: "Open Sans Bold", serif;
+        display: block;
     }
 }

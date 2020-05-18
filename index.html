@@ -40,11 +40,10 @@
         </div>
     </header>
     <main class="main">
-        <article class="article-box">
-            <section class="section-box">
+        <div class="box">
+            <div class="section-box">
                 <div class="box-preview">
                     <h2 class="section-subject"> athlets</h2>
-                    <img class="img-preview" src="./images/footballer_192.png" alt="footballer">
                 </div>
                 <div class="section-content">
                     <section class="content-box">
@@ -75,11 +74,10 @@
                         </p>
                     </section>
                 </div>
-            </section>
-            <section class="section-box">
-                <div class="box-preview">
+            </div>
+            <div class="section-box">
+                <div class="box-preview box-preview-2">
                     <h2 class="section-subject"> players</h2>
-                    <img class="img-preview" src="./images/basketballer_302.png" alt="basketballter">
                 </div>
                     <div class="section-content">
                     <section class="content-box">
@@ -110,40 +108,62 @@
                         </p>
                     </section>
                 </div>
-            </section>
-        </article>
-        <article class="article">
-            <section class="section">
-                <img class ="img-container" src="./images/be-active_640.jpg" alt="sportsman with a phone">
-                <div class="container">
-                    <div class="holder">
-                        <span class="number-box holder-number">01</span>
-                    </div>
-                        <h3 class="container-subtitle">be active</h3>
-                        <p class="container-text">Post videos with your skills, Like and follow others to be more popular.</p>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-row">
+                <div class="gallery-column">
+                    <div class="gallery-counter">01</div>
+                    <picture class="gallery-media">
+                        <source media="(max-width: 640px)" srcset="./images/be-active_640.jpg">
+                        <source media="(max-width: 960px)" srcset="./images/be-active_960.jpg">
+                        <source media="(max-width: 1024px)" srcset="./images/be-active_1024.jpg">
+                        <img src="./images/be-active.jpg" alt="be active">
+                    </picture>
                 </div>
-            </section>
-            <section class="section">
-                <img class ="img-container" src="./images/find-contact_640.jpg" alt="tne coach is in the earphones">
-                <div class="container">
-                    <div class="holder">
-                        <span class="number-box holder-number">02</span>
-                    </div>
-                        <h3 class="container-subtitle">find contact</h3>
-                        <p class="container-text">Contact others to find right coach or athlete you are looking for.</p>
+                <div class="gallery-column gallery-content">
+                    <h3 class="gallery-title">be active</h3>
+                    <p class="gallery-text">
+                        Post videos with your skills, Like and follow others to be more
+                        popular.
+                    </p>
                 </div>
-            </section>
-            <section class="section">
-                <img class ="img-container" src="./images/work-it_640.jpg" alt="football players and cheerleaders">
-                <div class="container">
-                    <div class="holder">
-                        <span class="number-box holder-number">03</span>
-                    </div>
-                        <h3 class="container-subtitle">work it</h3>
-                        <p class="container-text">Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience.</p>
+            </div>
+            <div class="gallery-row">
+                <div class="gallery-column">
+                    <div class="gallery-counter">02</div>
+                    <picture class="gallery-media">
+                        <source media="(max-width: 640px)" srcset="./images/find-contact_640.jpg">
+                        <source media="(max-width: 960px)" srcset="./images/find-contact_960.jpg">
+                        <source media="(max-width: 1024px)" srcset="./images/find-contact_1024.jpg">
+                        <img src="./images/find-contact.jpg" alt="find contact">
+                    </picture>
                 </div>
-            </section>
-        </article>
+                <div class="gallery-column gallery-content">
+                    <h3 class="gallery-title">find contact</h3>
+                    <p class="gallery-text">
+                        Contact others to find right coach or athlete you are looking for.
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-row">
+                <div class="gallery-column">
+                    <div class="gallery-counter">03</div>
+                    <picture class="gallery-media">
+                        <source media="(max-width: 640px)" srcset="./images/work-it_640.jpg">
+                        <source media="(max-width: 960px)" srcset="./images/work-it_960.jpg">
+                        <source media="(max-width: 1024px)" srcset="./images/work-it_1024.jpg">
+                        <img src="./images/work-it.jpg" alt="work it">
+                    </picture>
+                </div>
+                <div class="gallery-column gallery-content">
+                    <h3 class="gallery-title">work it</h3>
+                    <p class="gallery-text">
+                        Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience.
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer-site">
