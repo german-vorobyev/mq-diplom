@@ -44,6 +44,158 @@
 .span-h1 {
     display: block;
 }
+.button {
+    background-color: #5e42b0;
+    border: 0;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.text {
+    font-family: "Open Sans Regular", serif;
+    text-transform: uppercase;
+}
+.text-2 {
+    font-family: "Open Sans Bold", serif;
+    display: block;
+}
+.section-subject {
+    font-family: "Open Sans Bold", serif;
+    color: #e7e7e7;
+    text-transform: uppercase;
+}
+.box-preview {
+    display: flex;
+}
+.header-box {
+    display: flex;
+    font-family: "Open Sans Bold", serif;
+    text-transform: uppercase;
+}
+.number-box {
+    font-family: "Open Sans Bold", serif;
+    text-transform: uppercase;
+    align-self: flex-start;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+.number_box {
+    padding-top: 4px;
+}
+.number-box::after {
+    content: "";
+    position: absolute;
+    background: #5e42b0;
+    right: 5%;
+    left: 5%;
+    bottom: -4px;
+    width: 90%;
+    height: 4px;
+    border-radius: 2px;
+}
+.number-box-3::after {
+    background: #ffffff;
+}
+.number-box_3 {
+    color: #8765dd;
+}
+.subtitle-box {
+    color: #c1c1c1;
+    margin-left: 3%;
+}
+.text-box {
+    font-family: "Open Sans Regular", serif;
+}
+.text-box-3 {
+    color: #ffffff;
+}
+.content-box-2 {
+    background-color: #f5f4f9;
+}
+.content-box-3 {
+    background-color: #5e42b0;
+}
+.content-box_3 {
+    background-color: #090c35;
+}
+.gallery-column {
+    position: relative;
+}
+img {
+    width: 100%;
+}
+.gallery-counter {
+    font-family: "Open Sans Bold", serif;
+    display: flex;
+    box-sizing: border-box;
+    background-color: #5e42b0;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    position: absolute
+}
+.gallery-counter::after {
+    content: "";
+    position: absolute;
+    background: #8f7bc8;
+    right: 38%;
+    left: 38%;
+    width: 24%;
+}
+.gallery-title {
+    font-family: "Open Sans Bold", serif;
+    color: #e7e7e7;
+    text-transform: uppercase;
+}
+.gallery-text {
+    font-family: "Open Sans Regular", serif;
+}
+
+.footer {
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+.footer::before {
+    content: "";
+    background-color: #161133;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+.footer-site {
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-box {
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    background: linear-gradient(to top, #52389d, #7352d0);
+    display: flex;
+}
+.logo-footer {
+    fill: #ffffff;
+    margin: auto;
+}
+.footer-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Open Sans Bold", serif;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.footer-subtitle {
+    font-family: "Open Sans Regular", serif;
+    text-transform: uppercase;
+    color: #9b8ec1;
+}
 @media (max-width: 640px) {
     .logo-box {
         display: flex;
@@ -74,17 +226,11 @@
         margin-top: 5.5rem;
     }
     .button {
-        background-color: #5e42b0;
-        border: 0;
         height: 35px;
         width: 280px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 1.25rem;
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
     }
     .button-2 {
         margin-top: 0.9rem;
@@ -97,23 +243,14 @@
         margin-right: 5px;
     }
     .text {
-        font-family: "Open Sans Regular", serif;
-        text-transform: uppercase;
         font-size: 0.5rem;
     }
-    .text-2 {
-        font-family: "Open Sans Bold", serif;
-        display: block;
-    }
+
     .section-subject {
-        font-family: "Open Sans Bold", serif;
         font-size: 3.125rem;
-        color: #e7e7e7;
-        text-transform: uppercase;
         margin-left: 6.25%;
     }
     .box-preview {
-        display: flex;
         flex-direction: column-reverse;
     }
     .box-preview::before {
@@ -129,94 +266,31 @@
         padding: 1.875rem 6.25% 3.125rem;
     }
     .header-box {
-        display: flex;
-        font-family: "Open Sans Bold", serif;
-        text-transform: uppercase;
         margin-bottom: 1.5rem;
     }
     .number-box {
-        font-family: "Open Sans Bold", serif;
-        text-transform: uppercase;
         font-size: 14px;
-        align-self: flex-start;
-        box-sizing: border-box;
         width: 17px;
-        text-align: center;
-        position: relative;
-        display: inline-block;
-    }
-    .number_box {
-        padding-top: 4px;
-    }
-    .number-box::after {
-        content: "";
-        position: absolute;
-        background: #5e42b0;
-        right: 5%;
-        left: 5%;
-        bottom: -3px;
-        width: 90%;
-        height: 4px;
-        border-radius: 2px;
-    }
-    .number-box-3::after {
-        background: #ffffff;
-    }
-    .number-box_3 {
-        color: #8765dd;
     }
     .subtitle-box {
         font-size: 1.5rem;
-        color: #c1c1c1;
-        margin-left: 3%;
     }
     .text-box {
-        font-family: "Open Sans Regular", serif;
         font-size: 1rem;
-    }
-    .text-box-3 {
-        color: #ffffff;
-    }
-    .content-box-2 {
-        background-color: #f5f4f9;
-    }
-    .content-box-3 {
-        background-color: #5e42b0;
-    }
-    .content-box_3 {
-        background-color: #090c35;
     }
 
     .gallery-column {
         position: relative;
     }
-    img {
-        height: 350px;
-        width: 100%;
-    }
     .gallery-counter {
-        font-family: "Open Sans Bold", serif;
         font-size: 14px;
-        display: flex;
-        box-sizing: border-box;
         width: 70px;
         height: 70px;
-        background-color: #5e42b0;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        position: absolute;
         top: 290px;
         left: 6.25%;
     }
     .gallery-counter::after {
-        content: "";
-        position: absolute;
-        background: #8f7bc8;
-        right: 39%;
-        left: 39%;
         bottom: 21px;
-        width: 22%;
         height: 4px;
         border-radius: 2px;
     }
@@ -225,78 +299,41 @@
         margin-left: 6.25%;
     }
     .gallery-title {
-        font-family: "Open Sans Bold", serif;
         font-size: 1.75rem;
-        color: #e7e7e7;
-        text-transform: uppercase;
         margin-top: 1rem;
         margin-bottom: 1rem;
-    }
-    .gallery-text {
-        font-family: "Open Sans Regular", serif;
     }
 
     .footer {
         background: url("../images/game_767.jpg") no-repeat center center #000000;
-        background-size: cover;
-        position: relative;
-        display: flex;
-    }
-    .footer::before {
-        content: "";
-        background-color: #161133;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        opacity: 0.9;
-    }
-    .footer-site {
-        z-index: 1;
-        margin-left: auto;
-        margin-right: auto;
     }
     .footer-box {
-        margin-top: 6.25rem;
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box;
+        margin-top: 4.3rem;
         width: 75px;
         height: 75px;
-        background-color: #53399f;
         border-radius: 1rem;
-        display: flex;
     }
     .logo-footer {
         width: 60px;
         height: 50px;
-        fill: #ffffff;
-        margin: auto;
     }
     .footer-title {
-        font-family: "Open Sans Bold", serif;
         font-size: 2.1rem;
-        text-transform: uppercase;
-        color: #ffffff;
-        margin-top: 3.4rem;
+        margin-top: 3.1rem;
     }
     .footer-subtitle {
-        font-family: "Open Sans Regular", serif;
         font-size: 0.97rem;
-        text-transform: uppercase;
-        color: #9b8ec1;
-        margin-bottom: 4.65rem;
     }
     .footer-logo {
-        margin-top: 3.5rem;
+        margin-top: 5rem;
         padding-bottom: 10px;
     }
 }
-
 @media (min-width: 641px) and (max-width: 960px){
     .logo {
-        width: 12.8rem;
-        height: 3.6rem;
-        margin-top: 20px;
+        width: 205px;
+        height: 58px;
+        margin-top: 10px;
     }
     .header {
         background: url("../images/football_1280.jpg") no-repeat center center #000000;
@@ -308,44 +345,149 @@
         padding: 0 16px;
     }
     .header-title {
-        font-size: 4rem;
+        font-size: 64px;
         margin-left: 11%;
-        margin-top: 11.25rem;
+        margin-top: 170px;
     }
     .span-h1 {
-        padding-left: 6rem;
+        padding-left: 96px;
     }
     .button-box {
-        margin-top: 5.5rem;
+        margin-top: 380px;
         display: flex;
+        justify-content: center;
     }
     .button {
-        background-color: #5e42b0;
-        border: 0;
         height: 75px;
         width: 310px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 1.25rem;
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
+        border-radius: 64px;
+    }
+    .button-2 {
+        margin-left: 30px;
     }
     .button-logo {
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
         fill: #ffffff;
-        margin-left: 80px;
-        margin-right: 5px;
+        margin-left: 50px;
+        margin-right: 25px;
     }
     .text {
-        font-family: "Open Sans Regular", serif;
-        text-transform: uppercase;
-        font-size: 0.5rem;
+        font-size: 14px;
     }
-    .text-2 {
-        font-family: "Open Sans Bold", serif;
-        display: block;
+
+    .box {
+        margin-top: 90px;
+    }
+    .section-box-2 {
+        margin-top: 55px;
+    }
+    .section-subject {
+        font-size: 80px;
+    }
+    .section-subject-1 {
+        margin-left: 39%;
+        margin-top: -25px;
+    }
+    .section-subject-2 {
+        margin-left: 4%;
+    }
+    .box-preview {
+        position: relative;
+    }
+    .box-preview-1::before {
+        content: url("../images/footballer_497.png");
+        position: absolute;
+        left: -21%;
+    }
+    .box-preview-2::before {
+        content: url("../images/basketballer_436.png");
+        position: absolute;
+        right: 0;
+    }
+    .content-box {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 4%;
+    }
+    .header-box {
+        margin-bottom: 32px;
+    }
+    .header-box-1 {
+        margin-left: 40%;
+    }
+    .header-box-2 {
+        margin-left: 4%;
+    }
+    .number-box {
+        font-size: 18px;
+        width: 20px;
+    }
+    .subtitle-box {
+        font-size: 32px;
+    }
+    .text-box {
+        font-size: 18px;
+        width: 440px;
+    }
+    .text-box-1 {
+        margin-left: 40%;
+    }
+    .text-box-2 {
+        margin-left: 4%;
+    }
+
+    .gallery-counter {
+        font-size: 24px;
+        width: 115px;
+        height: 115px;
+        top: 505px;
+        left: 4%;
+    }
+    .gallery-counter::after {
+        bottom: 34px;
+        height: 6px;
+        border-radius: 3px;
+    }
+    .gallery-content {
+        margin-bottom: 90px;
+        margin-left: 4%;
+    }
+    .gallery-title {
+        font-size: 80px;
+        margin-top: 65px;
+        margin-bottom: 10px;
+    }
+    .gallery-text {
+        width: 640px;
+        font-size: 24px;
+    }
+
+    .footer {
+        background: url("../images/game_767.jpg") no-repeat center center #000000;
+    }
+    .footer-box {
+        margin-top: 125px;
+        width: 135px;
+        height: 135px;
+        border-radius: 35px;
+    }
+    .logo-footer {
+        width: 105px;
+        height: 85px;
+    }
+    .footer-title {
+        font-size: 80px;
+        margin-top: 60px;
+    }
+    .footer-subtitle {
+        font-size: 36px;
+    }
+    .button-box-footer {
+        margin-top: 270px;
+    }
+    .footer-logo {
+        margin-top: 3.5rem;
+        padding-bottom: 25px;
     }
 }
