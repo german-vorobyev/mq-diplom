@@ -35,6 +35,7 @@
 .header-container {
     position: relative;
     z-index: 2;
+    padding: 0 16px;
 }
 .header-title {
     font-family: "Open Sans Bold", serif;
@@ -135,7 +136,7 @@ img {
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    position: absolute
+    position: absolute;
 }
 .gallery-counter::after {
     content: "";
@@ -153,7 +154,6 @@ img {
 .gallery-text {
     font-family: "Open Sans Regular", serif;
 }
-
 .footer {
     background-size: cover;
     position: relative;
@@ -169,8 +169,8 @@ img {
 }
 .footer-site {
     z-index: 1;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
 }
 .footer-box {
     margin-left: auto;
@@ -211,9 +211,6 @@ img {
         background-size: cover;
         position: relative;
     }
-    .header-container {
-        padding: 0 16px;
-    }
     .header-title {
         font-size: 1.75rem;
         margin-left: 6.25%;
@@ -245,7 +242,6 @@ img {
     .text {
         font-size: 0.5rem;
     }
-
     .section-subject {
         font-size: 3.125rem;
         margin-left: 6.25%;
@@ -278,7 +274,6 @@ img {
     .text-box {
         font-size: 1rem;
     }
-
     .gallery-column {
         position: relative;
     }
@@ -286,8 +281,8 @@ img {
         font-size: 14px;
         width: 70px;
         height: 70px;
-        top: 290px;
         left: 6.25%;
+        bottom: -10px;
     }
     .gallery-counter::after {
         bottom: 21px;
@@ -303,7 +298,6 @@ img {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-
     .footer {
         background: url("../images/game_767.jpg") no-repeat center center #000000;
     }
@@ -341,9 +335,6 @@ img {
         position: relative;
         padding: 20px 0 85px;
     }
-    .header-container {
-        padding: 0 16px;
-    }
     .header-title {
         font-size: 64px;
         margin-left: 11%;
@@ -375,7 +366,6 @@ img {
     .text {
         font-size: 14px;
     }
-
     .box {
         margin-top: 90px;
     }
@@ -436,13 +426,12 @@ img {
     .text-box-2 {
         margin-left: 4%;
     }
-
     .gallery-counter {
         font-size: 24px;
         width: 115px;
         height: 115px;
-        top: 505px;
         left: 4%;
+        bottom: -20px;
     }
     .gallery-counter::after {
         bottom: 34px;
@@ -462,9 +451,11 @@ img {
         width: 640px;
         font-size: 24px;
     }
-
+    .footer-site {
+        padding: 0 15px;
+    }
     .footer {
-        background: url("../images/game_767.jpg") no-repeat center center #000000;
+        background: url("../images/game_1280.jpg") no-repeat center center #000000;
     }
     .footer-box {
         margin-top: 125px;
@@ -489,5 +480,227 @@ img {
     .footer-logo {
         margin-top: 3.5rem;
         padding-bottom: 25px;
+    }
+}
+@media (min-width: 961px) and (max-width: 1120px){
+    .box-preview-1::before {
+        left: -10%;
+    }
+}
+@media (min-width: 1366px) and (max-width: 1919px){
+    .box-preview-1::before {
+        left: 10%;
+    }
+}
+@media (min-width: 1920px){
+    .box-preview-1::before {
+        left: 20%;
+    }
+}
+@media (min-width: 961px) and (max-width: 1140px){
+    .box-preview-2::before {
+        right: -40%;
+    }
+}
+@media (min-width: 1141px) and (max-width: 1388px){
+    .box-preview-2::before {
+        right: -20%;
+    }
+}
+@media (min-width: 1389px) and (max-width: 1550px){
+    .box-preview-2::before {
+        right: 0;
+    }
+}
+@media (min-width: 1551px){
+    .box-preview-2::before {
+        right: 9.4%;
+    }
+}
+@media (min-width: 961px) and (max-width: 1830px){
+    .gallery-content {
+        padding-top: 11%;
+    }
+}
+@media (min-width: 1831px){
+    .gallery-content {
+        padding-top: 12.5%;
+    }
+}
+@media (min-width: 961px) {
+    .logo {
+        width: 205px;
+        height: 58px;
+    }
+    .header {
+        background: url("../images/football_1920.jpg") no-repeat center center #000000;
+        background-size: cover;
+        position: relative;
+        padding: 45px 9.38% 105px;
+    }
+    .header-title {
+        font-size: 90px;
+        margin-top: 230px;
+    }
+    .span-h1 {
+        text-align: right;
+    }
+    .button-box {
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    .button {
+        height: 75px;
+        width: 310px;
+        border-radius: 64px;
+    }
+    .button-2 {
+        margin-left: 30px;
+    }
+    .button-logo {
+        width: 40px;
+        height: 40px;
+        fill: #ffffff;
+        margin-left: 50px;
+        margin-right: 25px;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .box {
+        margin-top: 25px;
+    }
+    .section-subject {
+        font-size: 80px;
+    }
+    .section-subject-1 {
+        margin-top: 40px;
+        padding-left: 52%;
+    }
+    .box-preview {
+        position: relative;
+    }
+    .box-preview-1::before {
+        content: url("../images/footballer_566.png");
+        position: absolute;
+    }
+    .box-preview-2::before {
+        content: url("../images/basketballer_991.png");
+        position: absolute;
+    }
+    .content-box {
+        padding: 60px 10% 60px 0;
+    }
+    .content_box {
+        padding-left: 52%;
+    }
+    .header-box {
+        margin-bottom: 32px;
+    }
+    .number-box {
+        font-size: 18px;
+        width: 20px;
+    }
+    .subtitle-box {
+        font-size: 32px;
+    }
+    .text-box {
+        font-size: 18px;
+    }
+    .section-box-2 {
+        margin-top: 20px;
+    }
+    .section-subject-2 {
+        margin-top: 85px;
+    }
+    .box-preview-2 {
+        padding-left: 9.4%;
+    }
+    .content_box_2 {
+        padding-left: 9.4%;
+    }
+    .text-box-2 {
+        width: 47%;
+    }
+    .gallery-row {
+        display: flex;
+        width: 100%;
+    }
+    .gallery-column {
+        width: 50%;
+    }
+    .gallery-content {
+        width: 50%;
+    }
+    .gallery-counter {
+        font-size: 24px;
+        width: 16.7%;
+        height: 21.8%;
+        right: -8.33%;
+        bottom: 50%;
+    }
+    .gallery-counter::after {
+        bottom: 35%;
+        height: 6px;
+        border-radius: 3px;
+        width: 18%;
+        right: 41%;
+        left: 41%;
+    }
+    .gallery-title {
+        font-size: 80px;
+        padding-left: 13.6%;
+        max-width: 65%;
+    }
+    .gallery-text {
+        width: 66.6%;
+        font-size: 24px;
+        margin-top: 10.4%;
+        padding-left: 13.6%;
+    }
+    .gallery-row-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .gallery-counter-2 {
+        left: -8.33%;
+        bottom: 50%;
+    }
+
+    .footer-site {
+        padding: 0 9.38%;
+    }
+    .footer {
+        background: url("../images/game_1920.jpg") no-repeat center center #000000;
+    }
+    .footer-container {
+        display: flex;
+    }
+    .footer-box {
+        margin-top: 230px;
+        width: 135px;
+        height: 135px;
+        border-radius: 35px;
+    }
+    .logo-footer {
+        width: 105px;
+        height: 85px;
+    }
+    .footer-title {
+        margin-top: 210px;
+        margin-left: 35px;
+        font-size: 80px;
+    }
+    .footer-subtitle {
+        font-size: 36px;
+    }
+    .button-box-footer {
+        margin-top: 160px;
+    }
+    .footer-logo {
+        margin-top: 255px;
+        padding-bottom: 50px;
     }
 }
